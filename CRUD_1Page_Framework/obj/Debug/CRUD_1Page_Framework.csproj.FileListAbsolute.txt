@@ -97,3 +97,6 @@ C:\DanSu\CRUD_1Page_Framework\CRUD_1Page_Framework\obj\Debug\CRUD_1Page_Framewor
 C:\DanSu\CRUD_1Page_Framework\CRUD_1Page_Framework\obj\Debug\CRUD_1Page_Framework.csproj.CopyComplete
 C:\DanSu\CRUD_1Page_Framework\CRUD_1Page_Framework\obj\Debug\CRUD_1Page_Framework.dll
 C:\DanSu\CRUD_1Page_Framework\CRUD_1Page_Framework\obj\Debug\CRUD_1Page_Framework.pdb
+C:\DanSu\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\System.Web.Cors.dll
+C:\DanSu\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\System.Web.Http.Cors.dll
+C:\DanSu\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\System.Web.Http.Cors.xml
