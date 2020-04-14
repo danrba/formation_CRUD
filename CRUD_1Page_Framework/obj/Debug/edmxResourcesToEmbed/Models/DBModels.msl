@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ApprentissageDanModelStoreContainer" CdmEntityContainer="DBModel">
+    <EntitySetMapping Name="Equipe">
+      <EntityTypeMapping TypeName="ApprentissageDanModel.Equipe">
+        <MappingFragment StoreEntitySet="Equipe">
+          <ScalarProperty Name="EquipeId" ColumnName="EquipeId" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Ville" ColumnName="Ville" />
+          <ScalarProperty Name="Sport" ColumnName="Sport" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Joueur">
+      <EntityTypeMapping TypeName="ApprentissageDanModel.Joueur">
+        <MappingFragment StoreEntitySet="Joueur">
+          <ScalarProperty Name="JoueurId" ColumnName="JoueurId" />
+          <ScalarProperty Name="EquipeId" ColumnName="EquipeId" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="DateNaissance" ColumnName="DateNaissance" />
+          <ScalarProperty Name="Sexe" ColumnName="Sexe" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
