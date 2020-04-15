@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EquipeService } from 'src/app/shared/equipe.service';
 import { NgForm } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-equipe',
@@ -9,7 +10,8 @@ import { NgForm } from '@angular/forms';
 })
 export class EquipeComponent implements OnInit {
 
-  constructor( public service : EquipeService ) { }
+  constructor( public service : EquipeService,
+    private tostrs : ToastrService ) { }
 
   ngOnInit(): void {
     this.resetForm();
@@ -29,7 +31,14 @@ export class EquipeComponent implements OnInit {
   }
 
   onSubmit(form : NgForm) {
+    this.insertRecord(form);
+  }
 
+  insertRecord(form: NgForm){
+    this.service.postEquipe(form.value).subscribe(res =>{
+      this.tostrs.success('Inserted successfully','Equipe Register');
+      this.resetForm(form)
+    });
   }
   
 }

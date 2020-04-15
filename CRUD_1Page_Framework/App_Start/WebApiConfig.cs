@@ -12,7 +12,7 @@ namespace CRUD_1Page_Framework
         {
 
             // Enable CORS
-            config.EnableCors(new EnableCorsAttribute("http://localhost:4200/", headers:"*", methods:"*"));
+            config.EnableCors(new EnableCorsAttribute("http://localhost:4200", headers:"*", methods:"*"));
 
             // Configuration et services API Web
 

@@ -1,1 +1,9 @@
-<p>equipe-list works!</p>
+<table class="table table-hover">
+    <tr *ngFor="let equipe of service.list">
+      <td>{{equipe.EquipeId}}</td>
+      <td>{{equipe.Nom}}</td>
+      <td>{{equipe.Ville}}</td>
+      <td>{{equipe.Sport}}</td>
+      <td><button class="btn btn-sm btn-outline-danger">X</button></td>
+    </tr>
+  </table>
