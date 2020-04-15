@@ -1,11 +1,12 @@
-<form #form="ngForm">
+<form #form="ngForm" (submit)="onSubmit(form)">
     <div class="form-group">
         <label>EquipeId</label>
-        <input name="EquipeId" #EquipeId="ngModel" [(ngModel)]="service.formData.EquipeId" class="form-control">
+        <input name="EquipeId" #EquipeId="ngModel" [(ngModel)]="service.formData.EquipeId" class="form-control" required>
     </div>
     <div class="form-group">
         <label>Nom</label>
-        <input name="Nom" #Nom="ngModel" [(ngModel)]="service.formData.Nom" class="form-control">
+        <input name="Nom" #Nom="ngModel" [(ngModel)]="service.formData.Nom" class="form-control" required>
+        <div class="validation-error" *ngIf="Nom.invalid && Nom.touched">This filed is required</div>
     </div>
     <div class="form-group">
         <label>Ville</label>
