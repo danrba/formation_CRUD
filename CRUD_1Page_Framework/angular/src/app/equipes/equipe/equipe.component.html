@@ -3,6 +3,7 @@
         <label>EquipeId</label>
         <input name="EquipeId" #EquipeId="ngModel" [(ngModel)]="service.formData.EquipeId" class="form-control" required>
     </div> -->
+    <input type="hidden" name="EquipeId" #EquipeId="ngModel" [(ngModel)]="service.formData.EquipeId">
     <div class="form-group">
         <label>Nom</label>
         <input name="Nom" #Nom="ngModel" [(ngModel)]="service.formData.Nom" class="form-control" required>

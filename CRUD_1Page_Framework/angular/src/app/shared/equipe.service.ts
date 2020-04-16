@@ -22,4 +22,9 @@ export class EquipeService {
     .toPromise().then(res => this.list = res as Equipe[]);
   }
 
+  putEquipe(formData : Equipe){
+    return this.http.put(this.rootURL+'/Equipe/'+formData.EquipeId, formData);
+  }
+
+
 }

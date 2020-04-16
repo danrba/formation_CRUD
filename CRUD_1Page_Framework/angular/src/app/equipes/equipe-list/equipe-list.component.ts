@@ -16,7 +16,9 @@ export class EquipeListComponent implements OnInit {
   }
 
   populateForm(equipe : Equipe){
-    this.service.formData = equipe;
+    this.service.formData = Object.assign({}, equipe);
+    // this.service.formData = equipe;
+
   }
 
   
