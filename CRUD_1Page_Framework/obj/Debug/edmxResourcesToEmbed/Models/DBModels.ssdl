@@ -5,9 +5,9 @@
       <PropertyRef Name="EquipeId" />
     </Key>
     <Property Name="EquipeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Nom" Type="varchar" MaxLength="1" />
-    <Property Name="Ville" Type="varchar" MaxLength="1" />
-    <Property Name="Sport" Type="varchar" MaxLength="1" />
+    <Property Name="Nom" Type="varchar" MaxLength="50" />
+    <Property Name="Ville" Type="varchar" MaxLength="50" />
+    <Property Name="Sport" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Joueur">
     <Key>
@@ -15,10 +15,10 @@
     </Key>
     <Property Name="JoueurId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="EquipeId" Type="int" />
-    <Property Name="Nom" Type="varchar" MaxLength="1" />
-    <Property Name="Prenom" Type="varchar" MaxLength="1" />
+    <Property Name="Nom" Type="varchar" MaxLength="50" />
+    <Property Name="Prenom" Type="varchar" MaxLength="50" />
     <Property Name="DateNaissance" Type="date" />
-    <Property Name="Sexe" Type="varchar" MaxLength="1" />
+    <Property Name="Sexe" Type="varchar" MaxLength="50" />
     <Property Name="Numero" Type="int" />
   </EntityType>
   <Association Name="FK_Joueur_Equipe">

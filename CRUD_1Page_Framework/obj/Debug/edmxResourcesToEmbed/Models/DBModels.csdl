@@ -5,9 +5,9 @@
       <PropertyRef Name="EquipeId" />
     </Key>
     <Property Name="EquipeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Nom" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-    <Property Name="Ville" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-    <Property Name="Sport" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ville" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sport" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Joueur" Relationship="Self.FK_Joueur_Equipe" FromRole="Equipe" ToRole="Joueur" />
   </EntityType>
   <EntityType Name="Joueur">
@@ -16,10 +16,10 @@
     </Key>
     <Property Name="JoueurId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="EquipeId" Type="Int32" />
-    <Property Name="Nom" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-    <Property Name="Prenom" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="DateNaissance" Type="DateTime" Precision="0" />
-    <Property Name="Sexe" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Sexe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Numero" Type="Int32" />
     <NavigationProperty Name="Equipe" Relationship="Self.FK_Joueur_Equipe" FromRole="Joueur" ToRole="Equipe" />
   </EntityType>
