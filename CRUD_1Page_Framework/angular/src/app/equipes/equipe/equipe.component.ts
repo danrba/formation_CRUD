@@ -47,7 +47,7 @@ export class EquipeComponent implements OnInit {
 
   updateRecord(form: NgForm){
     this.service.putEquipe(form.value).subscribe(res =>{
-      this.tostrs.success('Updated successfully','Equipe Register');
+      this.tostrs.info('Updated successfully','Equipe Register');
       this.resetForm(form);
       this.service.refreshListe();
     });

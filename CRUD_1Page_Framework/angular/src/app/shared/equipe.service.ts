@@ -26,5 +26,8 @@ export class EquipeService {
     return this.http.put(this.rootURL+'/Equipe/'+formData.EquipeId, formData);
   }
 
+  deleteEquipe(id: number){
+    return this.http.delete(this.rootURL+'/Equipe/'+id);
+  }
 
 }

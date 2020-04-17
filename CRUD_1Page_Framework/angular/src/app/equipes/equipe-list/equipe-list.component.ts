@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EquipeService } from 'src/app/shared/equipe.service';
 import { Equipe } from 'src/app/shared/equipe.model';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-equipe-list',
@@ -9,7 +10,8 @@ import { Equipe } from 'src/app/shared/equipe.model';
 })
 export class EquipeListComponent implements OnInit {
 
-  constructor(public service : EquipeService) { }
+  constructor(public service : EquipeService,
+    private tostrs: ToastrService) { }
 
   ngOnInit(): void {
     this.service.refreshListe();
@@ -21,6 +23,14 @@ export class EquipeListComponent implements OnInit {
 
   }
 
-  
+  onDelete(equipeId: number){
+    if(confirm('Are you sure to delete this record?')){
+      this.service.deleteEquipe(equipeId).subscribe(res =>{
+        this.service.refreshListe();
+        this.tostrs.success('Deleted successfully','Equipe Register');
+    });
+    }
+
+  }
 
 }

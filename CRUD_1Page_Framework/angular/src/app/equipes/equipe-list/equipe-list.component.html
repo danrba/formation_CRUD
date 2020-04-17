@@ -4,6 +4,6 @@
       <td (click)="populateForm(equipe)">{{equipe.Nom}}</td>
       <td (click)="populateForm(equipe)">{{equipe.Ville}}</td>
       <td (click)="populateForm(equipe)">{{equipe.Sport}}</td>
-      <td><button class="btn btn-sm btn-outline-danger">X</button></td>
+      <td><button (click)="onDelete(equipe.EquipeId)" class="btn btn-sm btn-outline-danger">X</button></td>
     </tr>
   </table>
