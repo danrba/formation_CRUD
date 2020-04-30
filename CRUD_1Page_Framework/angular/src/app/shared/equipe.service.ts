@@ -9,7 +9,7 @@ export class EquipeService {
 
   formData : Equipe;
   list : Equipe[];
-  readonly rootURL = "https://localhost:44360/api"
+  readonly rootURL = "http://localhost:44360/api"
 
   constructor( private http : HttpClient) { }
 
@@ -29,5 +29,27 @@ export class EquipeService {
   deleteEquipe(id: number){
     return this.http.delete(this.rootURL+'/Equipe/'+id);
   }
+
+
+
+  // 
+  // constructor( private http : HttpClient) { }
+
+  // postEquipe(formData : Equipe){
+  //   return this.http.post('http://localhost:44360/api/Equipe', formData);
+  // }
+
+  // refreshListe(){
+  //   this.http.get('http://localhost:44360/api/Equipe')
+  //   .toPromise().then(res => this.list = res as Equipe[]);
+  // }
+
+  // putEquipe(formData : Equipe){
+  //   return this.http.put('http://localhost:44360/api/Equipe/'+formData.EquipeId, formData);
+  // }
+
+  // deleteEquipe(id: number){
+  //   return this.http.delete('http://localhost:44360/api/Equipe/'+id);
+  // }
 
 }

@@ -189,7 +189,6 @@ C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\Antl
 C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\fr\EntityFramework.resources.dll
 C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\fr\System.Net.Http.Formatting.resources.dll
-C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\fr\System.Web.Http.resources.dll
 C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\fr\System.Web.Http.WebHost.resources.dll
 C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\fr\System.Web.Helpers.resources.dll
 C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\fr\System.Web.Mvc.resources.dll
@@ -202,3 +201,4 @@ C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\obj\Debu
 C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\obj\Debug\CRUD_1Page_Framework.csproj.CopyComplete
 C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\obj\Debug\CRUD_1Page_Framework.dll
 C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\obj\Debug\CRUD_1Page_Framework.pdb
+C:\DanSu\projet-apprentissage\CRUD_1Page_Framework\CRUD_1Page_Framework\bin\fr\EntityFramework.SqlServer.resources.dll
